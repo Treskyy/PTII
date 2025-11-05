@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografik: Pengantar Teknologi Informasi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=IBM+Plex+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #000000; 
+            color: #D1D5DB; 
+        }
+        h1, h2, h3, h4, .font-mono { 
+            font-family: 'IBM Plex Mono', monospace; 
+        }
+        .chart-container { 
+            position: relative; 
+            width: 100%; 
+            max-width: 600px; 
+            margin-left: auto; 
+            margin-right: auto; 
+            height: 350px; 
+            max-height: 40vh; 
+        }
+        @media (max-width: 768px) { 
+            .chart-container { 
+                height: 300px; 
+                max-height: 50vh; 
+            } 
+        }
+    </style>
+</head>
+<body class="bg-black text-gray-300">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-2">PENGANTAR TEKNOLOGI INFORMASI</h1>
+            <p class="text-xl text-cyan-400 font-mono">// SEBUAH RANGKUMAN VISUAL</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <section id="section-1" class="md:col-span-2 border border-gray-700 p-6">
+                <h2 class="text-2xl font-bold mb-4 text-white">1. GALERI TEKNOLOGI LAWAS</h2>
+                <p class="text-gray-400 mb-6">Perangkat yang umum sebelum era modern, masing-masing dengan ciri dan fungsi khasnya.</p>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+                    <div class="border border-gray-800 p-3 text-center">
+                        <h3 class="font-semibold text-gray-200">Floppy Disk</h3>
+                        <p class="text-sm text-gray-500">Penyimpanan portabel (magnetik), kapasitas sangat kecil (misal: 1.44 MB).</p>
+                    </div>
+                    <div class="border border-gray-800 p-3 text-center">
+                        <h3 class="font-semibold text-gray-200">Pager</h3>
+                        <p class="text-sm text-gray-500">Menerima pesan singkat (numerik/teks) satu arah.</p>
+                    </div>
+                    <div class="border border-gray-800 p-3 text-center">
+                        <h3 class="font-semibold text-gray-200">Telepon Putar</h3>
+                        <p class="text-sm text-gray-500">Komunikasi suara analog via kabel, menggunakan piringan putar mekanis.</p>
+                    </div>
+                    <div class="border border-gray-800 p-3 text-center">
+                        <h3 class="font-semibold text-gray-200">Kaset Pita</h3>
+                        <p class="text-sm text-gray-500">Media penyimpanan audio analog (magnetik), linier (harus di-rewind).</p>
+                    </div>
+                    <div class="border border-gray-800 p-3 text-center">
+                        <h3 class="font-semibold text-gray-200">Ponsel 3310</h3>
+                        <p class="text-sm text-gray-500">Panggilan suara dan SMS, layar monokrom, sangat awet.</p>
+                    </div>
+                    <div class="border border-gray-800 p-3 text-center">
+                        <h3 class="font-semibold text-gray-200">OHP</h3>
+                        <p class="text-sm text-gray-500">Alat presentasi analog, memproyeksikan gambar dari lembar transparansi.</p>
+                    </div>
+                    <div class="border border-gray-800 p-3 text-center">
+                        <h3 class="font-semibold text-gray-200">Mesin Tik</h3>
+                        <p class="text-sm text-gray-500">Mengetik langsung ke kertas menggunakan pita tinta.</p>
+                    </div>
+                    <div class="border border-gray-800 p-3 text-center">
+                        <h3 class="font-semibold text-gray-200">Faximile</h3>
+                        <p class="text-sm text-gray-500">Mengirim/menerima salinan dokumen melalui jaringan telepon.</p>
+                    </div>
+                    <div class="border border-gray-800 p-3 text-center">
+                        <h3 class="font-semibold text-gray-200">Laserdisk</h3>
+                        <p class="text-sm text-gray-500">Memutar video analog dari disk optik besar.</p>
+                    </div>
+                    <div class="border border-gray-800 p-3 text-center">
+                        <h3 class="font-semibold text-gray-200">VCR</h3>
+                        <p class="text-sm text-gray-500">Memutar/merekam video analog menggunakan kaset pita (VHS/Betamax).</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-2" class="border border-gray-700 p-6">
+                <h2 class="text-2xl font-bold mb-4 text-white">2. GENERASI KOMPUTER</h2>
+                <p class="text-gray-400 mb-6">Sejarah komputer dibagi menjadi beberapa generasi berdasarkan teknologi komponen utamanya, membuatnya lebih kecil, cepat, dan bertenaga.</p>
+                <div class="relative pl-6 border-l-2 border-cyan-400">
+                    <div class="mb-6">
+                        <div class="absolute w-3 h-3 bg-cyan-400 -left-[7px] mt-1"></div>
+                        <h3 class="font-semibold text-lg text-gray-100">Gen 1: Tabung Vakum</h3>
+                        <p class="text-sm text-gray-500">1940s. **Tabung Vakum**. Ukuran sangat besar, boros energi, panas (Contoh: ENIAC).</p>
+                    </div>
+                    <div class="mb-6">
+                        <div class="absolute w-3 h-3 bg-cyan-400 -left-[7px] mt-1"></div>
+                        <h3 class="font-semibold text-lg text-gray-100">Gen 2: Transistor</h3>
+                        <p class="text-sm text-gray-500">1950s. **Transistor**. Ukuran lebih kecil, lebih hemat energi, lebih andal.</p>
+                    </div>
+                    <div class="mb-6">
+                        <div class="absolute w-3 h-3 bg-cyan-400 -left-[7px] mt-1"></div>
+                        <h3 class="font-semibold text-lg text-gray-100">Gen 3: Sirkuit Terpadu</h3>
+                        <p class="text-sm text-gray-500">1960s. **Sirkuit Terpadu (IC)**. Komputer mini, lebih cepat, mulai ada sistem operasi.</p>
+                    </div>
+                    <div class="mb-6">
+                        <div class="absolute w-3 h-3 bg-cyan-400 -left-[7px] mt-1"></div>
+                        <h3 class="font-semibold text-lg text-gray-100">Gen 4: Mikroprosesor</h3>
+                        <p class="text-sm text-gray-500">1970s+. **Mikroprosesor**. Muncullah Komputer Pribadi (PC) dan laptop.</p>
+                    </div>
+                    <div>
+                        <div class="absolute w-3 h-3 bg-cyan-400 -left-[7px] mt-1"></div>
+                        <h3 class="font-semibold text-lg text-gray-100">Gen 5: AI & Paralel</h3>
+                        <p class="text-sm text-gray-500">Kini. **AI & Komputasi Paralel**. Fokus pada Kecerdasan Buatan dan pemrosesan super cepat.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-3" class="border border-gray-700 p-6">
+                <h2 class="text-2xl font-bold mb-4 text-white">3. PROSES PENGIRIMAN PESAN</h2>
+                <p class="text-gray-400 mb-6">Saat mengirim email (Model TCP/IP), proses berlapis ini terjadi untuk memastikan data sampai dengan benar.</p>
+                <div class="flex flex-col items-center">
+                    <div class="w-full border border-gray-700 p-3 text-center">
+                        <h3 class="font-semibold text-gray-100">1. Aplikasi</h3>
+                        <p class="text-sm text-gray-500">Pesan dibuat oleh pengguna di aplikasi.</p>
+                    </div>
+                    <div class="text-2xl text-cyan-400 font-mono">↓</div>
+                    <div class="w-full border border-gray-700 p-3 text-center">
+                        <h3 class="font-semibold text-gray-100">2. Transport (TCP)</h3>
+                        <p class="text-sm text-gray-500">Pesan dipecah menjadi bagian-bagian kecil yang disebut **paket data**.</p>
+                    </div>
+                    <div class="text-2xl text-cyan-400 font-mono">↓</div>
+                    <div class="w-full border border-gray-700 p-3 text-center">
+                        <h3 class="font-semibold text-gray-100">3. Internet (IP)</h3>
+                        <p class="text-sm text-gray-500">Setiap paket diberi "amplop" berisi alamat **IP Pengirim** dan **IP Penerima**.</p>
+                    </div>
+                    <div class="text-2xl text-cyan-400 font-mono">↓</div>
+                    <div class="w-full border border-gray-700 p-3 text-center">
+                        <h3 class="font-semibold text-gray-100">4. Fisik</h3>
+                        <p class="text-sm text-gray-500">Paket dikirim sebagai sinyal (listrik, nirkabel) melalui router di internet.</p>
+                    </div>
+                    <div class="text-2xl text-cyan-400 font-mono">↓</div>
+                    <div class="w-full border border-gray-700 p-3 text-center">
+                        <h3 class="font-semibold text-gray-100">5. Penerima</h3>
+                        <p class="text-sm text-gray-500">Paket dikumpulkan, disusun ulang sesuai urutan, dan ditampilkan sebagai pesan utuh.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-4" class="border border-gray-700 p-6">
+                <h2 class="text-2xl font-bold mb-4 text-white">4. INTERNET DI BIDANG KESEHATAN</h2>
+                <p class="text-gray-400 mb-6">Internet telah mengubah bidang kesehatan secara signifikan, memungkinkan layanan yang lebih efisien dan dapat diakses dari jarak jauh.</p>
+                <ul class="list-disc list-inside text-gray-400 space-y-2 mb-6">
+                    <li>**Telemedicine:** Layanan kesehatan jarak jauh (Sinkron: video call, Asinkron: data dikirim).</li>
+                    <li>**EMR (Rekam Medis Elektronik):** Rekam medis pasien digital, memudahkan akses riwayat.</li>
+                    <li>**IoMT (Internet of Medical Things):** Perangkat pintar (misal: smartwatch) memantau kesehatan real-time.</li>
+                    <li>**Riset & Kolaborasi:** Peneliti global berbagi data/temuan medis (misal: vaksin) lebih cepat.</li>
+                </ul>
+                <div class="chart-container">
+                    <canvas id="healthChart"></canvas>
+                </div>
+                <p class="text-center text-sm text-gray-500 mt-4">Komponen ekosistem kesehatan digital.</p>
+            </section>
+
+            <section id="section-5" class="border border-gray-700 p-6">
+                <h2 class="text-2xl font-bold mb-4 text-white">5. EVOLUSI PERANGKAT LUNAK</h2>
+                <p class="text-gray-400 mb-6">Perangkat lunak (software) telah berevolusi melalui beberapa era, dari program kustom menjadi platform cerdas berbasis jaringan.</p>
+                <div class="w-full overflow-x-auto">
+                    <div class="flex space-x-4 p-4">
+                        <div class="flex-shrink-0 w-48 border border-gray-800 p-4">
+                            <h3 class="font-semibold text-pink-500">Era Pioner (1950s)</h3>
+                            <p class="text-sm text-gray-500">Dibuat khusus (*custom*), distribusi terbatas, *Proses Batch* (dikerjakan berurutan).</p>
+                        </div>
+                        <div class="flex-shrink-0 w-48 border border-gray-800 p-4">
+                            <h3 class="font-semibold text-pink-500">Era Stabil (1960s)</h3>
+                            <p class="text-sm text-gray-500">Muncul sistem *Multi-user*, *Real-time*, *Database*, dan produk PL (siap pakai).</p>
+                        </div>
+                        <div class="flex-shrink-0 w-48 border border-gray-800 p-4">
+                            <h3 class="font-semibold text-pink-500">Era Mikro (1970s)</h3>
+                            <p class="text-sm text-gray-500">PL menjadi murah, muncul *Sistem Tersebar* (terhubung jaringan), *Kecerdasan Ditanam* (*embedded*).</p>
+                        </div>
+                        <div class="flex-shrink-0 w-48 border border-gray-800 p-4">
+                            <h3 class="font-semibold text-pink-500">Era Modern (1990s+)</h3>
+                            <p class="text-sm text-gray-500">*Sistem Desktop* (PC), *Teknologi Objek* (OOP), *Sistem Pakar* (AI), Jaringan Komputer/Internet.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="section-6" class="md:col-span-2 border border-gray-700 p-6">
+                <h2 class="text-2xl font-bold mb-4 text-white">6. E-BUSINESS VS E-ECONOMY</h2>
+                <p class="text-gray-400 mb-6">Meskipun terkait, keduanya memiliki cakupan yang berbeda. E-Business adalah komponen yang menggerakkan E-Economy.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="border border-gray-800 p-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-100">E-Business</h3>
+                        <p class="text-gray-400">Penggunaan TI untuk menjalankan **semua proses bisnis** (internal & eksternal), BUKAN hanya jual-beli. Contoh: CRM (Manajemen Pelanggan), SCM (Rantai Pasok), ERP (Perencanaan).</p>
+                    </div>
+                    <div class="border border-gray-800 p-4">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-100">E-Economy</h3>
+                        <p class="text-gray-400">**Sistem ekonomi makro** yang didasarkan pada teknologi digital. E-Business adalah komponen utama yang menggerakkan E-Economy.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="section-7" class="border border-gray-700 p-6">
+                <h2 class="text-2xl font-bold mb-4 text-white">7. SPEKTRUM E-BUSINESS</h2>
+                <p class="text-gray-400 mb-6">Menunjukkan seberapa digital sebuah perusahaan. Amazon adalah contoh klasik dari model Pure-Play.</p>
+                <ul class="list-disc list-inside text-gray-400 space-y-1 mb-4 text-sm">
+                    <li>**Brick-and-Mortar:** Fisik Murni (Toko kelontong).</li>
+                    <li>**Click-and-Mortar:** Campuran (Gramedia: toko fisik + online).</li>
+                    <li>**Pure-Play:** Digital Murni (Amazon: bisnis inti 100% online).</li>
+                </ul>
+                <div class="chart-container" style="height: 250px;">
+                    <canvas id="spectrumChart"></canvas>
+                </div>
+                <p class="text-center text-sm text-gray-500 mt-4">Amazon (Pure-Play) 100% digital, berbeda dari model campuran (Click-and-Mortar).</p>
+            </section>
+            
+            <section id="section-8" class="border border-gray-700 p-6">
+                <h2 class="text-2xl font-bold mb-4 text-white">8. PROFIL PEKERJAAN: AI ENGINEER</h2>
+                <p class="text-gray-400 mb-6">Insinyur Kecerdasan Buatan (AI) adalah arsitek di balik sistem cerdas yang dapat belajar dan membuat keputusan.</p>
+                <div class="bg-gray-900 border border-gray-700 p-4">
+                    <h3 class="text-xl font-semibold text-gray-100 font-mono">AI Engineer</h3>
+                    <ul class="mt-2 list-disc list-inside text-gray-400 space-y-1 font-mono text-sm">
+                        <li>**Tugas Utama:** Merancang, membangun, melatih, dan menerapkan model *Machine Learning* (ML) dan *Deep Learning* (DL).</li>
+                        <li>**Tujuan:** Membuat sistem/aplikasi cerdas yang dapat belajar dari data, membuat prediksi, atau mengenali pola (gambar, suara, teks).</li>
+                        <li>**Keterampilan:** Python, TensorFlow, PyTorch, algoritma ML, rekayasa data.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="section-9" class="border border-gray-700 p-6">
+                <h2 class="text-2xl font-bold mb-4 text-white">9. PILAR ETIKA DI DUNIA IT</h2>
+                <p class="text-gray-400 mb-6">Prinsip moral dalam penggunaan teknologi. Fokus pada 4 pilar utama: Privasi, Akurasi, Properti, dan Otoritas.</p>
+                <ul class="list-disc list-inside text-gray-400 space-y-2 mb-6">
+                    <li>**Privasi:** Hak individu untuk menentukan sejauh mana data pribadi dikumpulkan dan disebarkan.</li>
+                    <li>**Akurasi:** Tanggung jawab untuk memastikan kebenaran dan keakuratan informasi yang disajikan.</li>
+                    <li>**Properti:** Hak atas kekayaan intelektual (HAKI). Siapa yang memiliki data/kode, dan bagaimana itu boleh digunakan (isu pembajakan).</li>
+                    <li>**Otoritas (Akuntabilitas):** Siapa yang bertanggung jawab jika terjadi kegagalan sistem, kebocoran data, atau kerugian.</li>
+                </ul>
+                <div class="chart-container">
+                    <canvas id="ethicsChart"></canvas>
+                </div>
+                <p class="text-center text-sm text-gray-500 mt-4">Menyeimbangkan 4 Pilar Utama Etika.</p>
+            </section>
+
+            <section id="section-10" class="border border-gray-700 p-6">
+                <h2 class="text-2xl font-bold mb-4 text-white">10. TAHAPAN E-GOVERNMENT</h2>
+                <p class="text-gray-400 mb-6">Penggunaan TI oleh pemerintah untuk layanan publik (G2C: ke warga, G2B: ke bisnis), seperti aplikasi pajak Coretax.</p>
+                <h4 class="font-semibold text-gray-200 mb-2">Fitur/Manfaat (Contoh Coretax):</h4>
+                <ul class="list-disc list-inside text-gray-400 space-y-1 mb-4 text-sm">
+                    <li>**Terintegrasi:** Semua layanan pajak dalam 1 platform.</li>
+                    <li>**SSO (Single Sign-On):** Cukup 1 akun untuk semua urusan.</li>
+                    <li>**Efisiensi:** Layanan 24/7, *paperless*, tidak perlu antri.</li>
+                    <li>**Transparansi:** Semua transaksi tercatat.</li>
+                </ul>
+                <h4 class="font-semibold text-gray-200 mb-2 mt-6">Tahapan Kematangan:</h4>
+                <div class="chart-container">
+                    <canvas id="egovChart"></canvas>
+                </div>
+                <p class="text-center text-sm text-gray-500 mt-4">Coretax (Pajak) berada di Tahap 3 (Transaksi) menuju Tahap 4 (Integrasi).</p>
+            </section>
+
+        </div>
+
+    </div>
+
+    <script>
+        function wrapLabels(label) {
+            if (typeof label === 'string' && label.length > 16) {
+                const words = label.split(' ');
+                const lines = [];
+                let currentLine = '';
+                words.forEach(word => {
+                    if (currentLine.length + word.length + 1 <= 17) {
+                        currentLine += (currentLine ? ' ' : '') + word;
+                    } else {
+                        lines.push(currentLine);
+                        currentLine = word;
+                    }
+                });
+                lines.push(currentLine);
+                return lines;
+            }
+            return label;
+        }
+
+        const tooltipTitleCallback = {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                                return label.join(' ');
+                            } else {
+                                return label;
+                            }
+                        }
+                    }
+                }
+            }
+        };
+        
+        const palette = {
+            cyan: '#22D3EE',
+            pink: '#EC4899',
+            gray: '#9CA3AF',
+            darkGray: '#374151',
+            white: '#FFFFFF'
+        };
+
+        Chart.defaults.color = palette.gray;
+        Chart.defaults.borderColor = palette.darkGray;
+        Chart.defaults.plugins.legend.labels.color = palette.gray;
+
+        new Chart(document.getElementById('healthChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Telemedicine', 'EMR', 'IoMT', 'Riset & Kolaborasi'],
+                datasets: [{
+                    data: [30, 30, 20, 20],
+                    backgroundColor: [palette.cyan, palette.pink, palette.white, palette.gray],
+                    borderColor: '#000'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                ...tooltipTitleCallback
+            }
+        });
+
+        new Chart(document.getElementById('spectrumChart'), {
+            type: 'bar',
+            data: {
+                labels: [wrapLabels('Brick-and-Mortar'), wrapLabels('Click-and-Mortar'), wrapLabels('Pure-Play (Amazon)')],
+                datasets: [{
+                    label: 'Tingkat Digitalisasi',
+                    data: [20, 60, 100],
+                    backgroundColor: [palette.darkGray, palette.gray, palette.cyan],
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                ...tooltipTitleCallback,
+                plugins: {
+                    ...tooltipTitleCallback.plugins,
+                    legend: { display: false }
+                }
+            }
+        });
+
+        new Chart(document.getElementById('ethicsChart'), {
+            type: 'radar',
+            data: {
+                labels: ['Privasi', 'Akurasi', 'Properti', 'Otoritas'],
+                datasets: [{
+                    label: 'Tingkat Kepentingan Etis',
+                    data: [9, 8, 7, 8],
+                    backgroundColor: 'rgba(236, 72, 153, 0.2)',
+                    borderColor: palette.pink,
+                    pointBackgroundColor: palette.pink
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                ...tooltipTitleCallback,
+                scales: {
+                    r: {
+                        angleLines: { color: palette.darkGray },
+                        grid: { color: palette.darkGray },
+                        pointLabels: {
+                            font: { size: 10 },
+                            color: palette.gray
+                        },
+                        ticks: {
+                            backdropColor: '#000',
+                            color: palette.gray,
+                            stepSize: 2
+                        }
+                    }
+                }
+            }
+        });
+
+        new Chart(document.getElementById('egovChart'), {
+            type: 'line',
+            data: {
+                labels: [wrapLabels('Tahap 1: Informasi'), wrapLabels('Tahap 2: Interaksi'), wrapLabels('Tahap 3: Transaksi'), wrapLabels('Tahap 4: Integrasi')],
+                datasets: [{
+                    label: 'Tingkat Kematangan Layanan',
+                    data: [1, 2, 3, 4],
+                    fill: true,
+                    backgroundColor: 'rgba(34, 211, 238, 0.2)',
+                    borderColor: palette.cyan,
+                    tension: 0,
+                    pointBackgroundColor: palette.cyan,
+                    stepped: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                ...tooltipTitleCallback,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 5,
+                        ticks: {
+                            stepSize: 1
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
